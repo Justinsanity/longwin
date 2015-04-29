@@ -1,0 +1,105 @@
+ 
+ 
+ /*========================layout========================*/
+ body{
+	margin: 0;
+	color: white;
+ }
+ 
+ #container{
+	width: 1024px;
+	margin: auto;	
+	background-color: black;
+ }
+ 
+ #content{	
+	width: 875px;
+	float: right;
+	margin: 30px 0;
+ }
+ 
+ #sidebar{
+	width: 125px;
+	float: left;
+	margin: 30px 0;	
+ }
+ 
+ #foot{
+	clear: both;
+	height: 60px;
+	background-color: black;
+ }
+ 
+ 
+ /*========================header========================*/
+ #header{
+	width: 800px;
+	height: 368px;
+	margin: auto;	
+	
+	/*圖片漸層*/
+	background: /*Proposed W3C Markup */ 
+    linear-gradient(toprgba(255,255,255,0),
+    rgba(0,0,0,1)),url(../img/Mesona.jpg) center bottom no-repeat;
+	background: /*Firefox*/
+    -moz-linear-gradient(top,rgba(255,255,255,0),
+    rgba(0,0,0,1)),url(../img/Mesona.jpg) center bottom no-repeat;	
+	background: /*Chrome & Safari*/
+    -webkit-linear-gradient(top,rgba(255,255,255,0),
+    rgba(0,0,0,1)),url(../img/Mesona.jpg) center bottom no-repeat;
+	background: /*IE10*/
+	-ms-linear-gradient(top,rgba(255,255,255,0),
+    rgba(0,0,0,1)),url(../img/Mesona.jpg) center bottom no-repeat;
+	/*background:  /*opera also adapt to Chrome and Safari one
+	-o-linear-gradient(top, #3399FF 0%, #66FFFF 100%);*/
+ }
+ 
+ 
+ /*========================sidebar========================*/
+ .side_menu{ font-size: 1.05em; }
+ 
+ .side_menu ul{
+	margin-left: 50px;
+	padding-left: 0;
+ }
+ 
+ .side_menu li{
+	margin-bottom: 8px;
+	line-height: 1.2;
+	list-style: none;		/*拿掉項目符號*/
+ }
+ 
+ .side_menu li a{
+	color: #ffffff;
+	text-decoration: none;
+ }
+ 
+ .side_menu li a:hover{ color: #ff8800; }
+ 
+
+/*========================foot========================*/
+ #foot_info{
+	color: white;
+	font-size: 0.9em;
+	text-align: center;
+	vertical-align: middle;
+ }
+
+ #foot_info a{
+	color: white;
+	text-decoration: none;
+ }
+
+ /*=======================contact table (contact.html)======================*/
+ .contact{
+	font-size: 2em;
+ }
+ 
+ /*=======================company introduce (company_intro.html)*/
+ #intro_content{
+ 	width: 875px;
+	float: right;
+	margin: 30px 0;
+	background-image: url(../img/Puli.jpg) ;
+	background-repeat: no-repeat;
+ }
