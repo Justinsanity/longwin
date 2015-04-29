@@ -1,8 +1,8 @@
 
-* ¤@¶}©l¸ü¤J®É¡A²£«~¤¶²Ðªº¹Ï¤ù¬O¦³¨Ç left marging ªº
+* ä¸€é–‹å§‹è¼‰å…¥æ™‚ï¼Œç”¢å“ä»‹ç´¹çš„åœ–ç‰‡æ˜¯æœ‰äº› left marging çš„
 
-![](before.png)
+![](before.PNG)
 
-* ·íÂI¿ï¥ª¤è¡y²£«~¤¶²Ð¡z«á¡A¥Î¤F jQeury ªº .html() ¨Ó´À´« <div id='content'> ªº HTML ¤º®e¡AÁöµM»P­è¸ü¤Jªº¹Ï¡BHTML ¤@¼Ë¡A¦ý¬O left margin ´N¤£¨£¤F¡A¦Ó¥B§Ú¥ÎÂsÄý¾¹¶}µo¤u¨ãÆ[¹î«e«á¡ACSS ³£¬Û¦P¡A¤£ª¾¹D°ÝÃD¦b­þ
+* ç•¶é»žé¸å·¦æ–¹ã€Žç”¢å“ä»‹ç´¹ã€å¾Œï¼Œç”¨äº† jQeury çš„ .html() ä¾†æ›¿æ› <div id='content'> çš„ HTML å…§å®¹ï¼Œé›–ç„¶èˆ‡å‰›è¼‰å…¥çš„åœ–ã€HTML ä¸€æ¨£ï¼Œä½†æ˜¯ left margin å°±ä¸è¦‹äº†ï¼Œè€Œä¸”æˆ‘ç”¨ç€è¦½å™¨é–‹ç™¼å·¥å…·è§€å¯Ÿå‰å¾Œï¼ŒCSS éƒ½ç›¸åŒï¼Œä¸çŸ¥é“å•é¡Œåœ¨å“ª
 
-![](after.png)
+![](after.PNG)
