@@ -67,6 +67,7 @@
 	margin-bottom: 8px;
 	line-height: 1.2;
 	list-style: none;		/*拿掉項目符號*/
+	cursor: pointer;
  }
  
  .side_menu li a{
@@ -75,6 +76,7 @@
  }
  
  .side_menu li a:hover{ color: #ff8800; }
+ 
  
 
 /*========================foot========================*/
@@ -90,16 +92,3 @@
 	text-decoration: none;
  }
 
- /*=======================contact table (contact.html)======================*/
- .contact{
-	font-size: 2em;
- }
- 
- /*=======================company introduce (company_intro.html)*/
- #intro_content{
- 	width: 875px;
-	float: right;
-	margin: 30px 0;
-	background-image: url(../img/Puli.jpg) ;
-	background-repeat: no-repeat;
- }
