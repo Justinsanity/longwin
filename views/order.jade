@@ -1,0 +1,41 @@
+html
+  head
+    title!= title
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js')
+  body
+    h1線上訂購(系統測試中，請勿下單！)
+    div(class='order' id='step1')
+        form(action='/order2' name='step1' method='post')
+          姓名/代售商：
+          input(type='text' name='name')
+          br
+          商品：
+          select(name="goods")
+            option(value="mesona")仙草茶
+          br
+          數量：
+          input(type='text' name='count')
+          br
+          聯絡電話：
+          input(type='text' name='phone')
+          br
+          |E-mail(非必填):  
+          //'|' used for plain text
+          input(type='text' name='email')
+          br
+          收貨地址:
+          input(type='text' name='addr')
+          br
+          input(type='submit' value='確認訂購')
+        script.
+            var items = ['姓名/代售商', '數量', '連絡電話', 'E-mail', '收貨地址'];
+            var inputs = $("input");
+            $('input[type="submit"]').click(function(e){
+                for(var i=0; i<inputs.length-1; i++){
+                    if(inputs[i].name != 'email' && inputs[i].value == ''){
+                        alert(items[i] + '為必填！');
+                        e.preventDefault();     // do not submit
+                        break;
+                    }
+                }
+            });

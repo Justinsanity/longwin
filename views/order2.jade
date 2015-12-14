@@ -1,0 +1,59 @@
+
+html
+  head
+    title!= title
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js')
+  body
+    div(class='order' id='step2')
+        h1請確認訂購資料
+        p
+          姓名/代售商：
+          span(id='name')!=name
+        p
+          商品：
+          if goods == 'mesona'
+            span(id='goods')仙草茶
+          else
+            span(id='goods')未知
+        p
+          數量：
+          span(id='count')!=count
+        p
+          連絡電話：
+          span(id='phone')!=phone
+        p
+          |E-mail：
+          span(id='email')!=email
+        p
+          收貨地址：
+          span(id='addr')!=addr
+    button(id='backward')返回修改
+    // this space used to make two button separated
+    | 
+    button(id='forward')確認送出
+    script.
+        $('#backward').click(function(){
+            // original data should keep in textbox (browser seems automatically remember input value with named textbox)
+            window.history.back();
+        });
+        
+        $('#forward').click(function(){
+          // carry data to step3 (order3.jade, final) and writing in database
+          $.post("/order3", { // this method will not automatically redirect
+           name: $('#name').text(), 
+           goods: $('#goods').text(), 
+           count: $('#count').text(),
+           phone: $('#phone').text(),
+           email: $('#email').text(), 
+           addr: $('#addr').text()
+          })
+            .done(function(){   // success
+              location.replace('/order3'); // this is GET method
+            })
+            .fail(function(){
+              alert('系統錯誤，請在嘗試或來電洽詢！');                
+              location.replace('/');
+            }) // error
+            // .always(function(){ //complete
+            // });
+        });

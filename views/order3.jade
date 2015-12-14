@@ -1,0 +1,11 @@
+html
+  head
+    title!= title
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js')
+  body
+    div(class='order' id='step3')
+        h1恭喜您，訂單已成立！
+        script.
+            setTimeout(function(){
+                top.location.href='http://longwin.tw';
+            },5000);
